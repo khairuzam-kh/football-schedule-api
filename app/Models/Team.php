@@ -20,7 +20,7 @@ class Team extends Model
     ];
 
     public function homeMatches()
-    {
+    {   
         return $this->hasMany(FootballMatch::class, 'home_team_id');
     }
 
